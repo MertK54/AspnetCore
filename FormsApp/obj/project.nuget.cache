@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "P5mDMv5zkZM=",
+  "success": true,
+  "projectFilePath": "/Users/mertkezer/ASPNETCORE -  DERS/FormsApp/FormsApp.csproj",
+  "expectedPackageFiles": [
+    "/Users/mertkezer/.nuget/packages/microsoft.netcore.app.ref/7.0.20/microsoft.netcore.app.ref.7.0.20.nupkg.sha512",
+    "/Users/mertkezer/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.20/microsoft.aspnetcore.app.ref.7.0.20.nupkg.sha512",
+    "/Users/mertkezer/.nuget/packages/microsoft.netcore.app.host.osx-arm64/7.0.20/microsoft.netcore.app.host.osx-arm64.7.0.20.nupkg.sha512"
+  ],
+  "logs": []
+}
