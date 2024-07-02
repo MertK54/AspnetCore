@@ -17,7 +17,7 @@ namespace FormsApp.Models
         //Required çalışması için null değer olma ihtimali olmalı o yüzden manuel olarak decimal?
         public decimal? Price { get; set; }
         [Display(Name = "Image")]
-        public string Image { get; set; } = string.Empty;
+        public string? Image { get; set; } = string.Empty;
         public bool IsActive { get; set; }
         [Required]
         [Display(Name = "Category")]

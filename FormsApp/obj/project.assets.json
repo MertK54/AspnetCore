@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/mertkezer/ASPNETCORE -  DERS/FormsApp/FormsApp.csproj",
+      "projectUniqueName": "/Users/mertkezer/AspnetcoreDers/FormsApp/FormsApp.csproj",
       "projectName": "FormsApp",
-      "projectPath": "/Users/mertkezer/ASPNETCORE -  DERS/FormsApp/FormsApp.csproj",
+      "projectPath": "/Users/mertkezer/AspnetcoreDers/FormsApp/FormsApp.csproj",
       "packagesPath": "/Users/mertkezer/.nuget/packages/",
-      "outputPath": "/Users/mertkezer/ASPNETCORE -  DERS/FormsApp/obj/",
+      "outputPath": "/Users/mertkezer/AspnetcoreDers/FormsApp/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/mertkezer/.nuget/NuGet/NuGet.Config"
