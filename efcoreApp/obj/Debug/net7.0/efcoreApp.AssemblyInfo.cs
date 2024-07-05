@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("FormsApp")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("efcoreApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8cbf92f232626763e2cb8321d41e9703129d5ff4")]
-[assembly: System.Reflection.AssemblyProductAttribute("FormsApp")]
-[assembly: System.Reflection.AssemblyTitleAttribute("FormsApp")]
+[assembly: System.Reflection.AssemblyProductAttribute("efcoreApp")]
+[assembly: System.Reflection.AssemblyTitleAttribute("efcoreApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // MSBuild WriteCodeFragment sınıfı tarafından oluşturuldu.
