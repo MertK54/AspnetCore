@@ -62,13 +62,13 @@ namespace BloggApp.Data.Concrete.EfCore
                         },
                         new Post
                         {
-                            Title = "Django Core",
+                            Title = "Django",
                             Content = "Django dersleri",
                             IsActive = true,
-                            PublishedOn = DateTime.Now.AddDays(-20),
+                            PublishedOn = DateTime.Now.AddDays(-19),
                             Tags = context.Tags.Take(3).ToList(),
                             Image = "3.jpeg",
-                            Url = "django-core",
+                            Url = "django",
                             UserId = 2
                         },
                         new Post
@@ -76,7 +76,7 @@ namespace BloggApp.Data.Concrete.EfCore
                             Title = "Node.js",
                             Content = "Node.js dersleri",
                             IsActive = true,
-                            PublishedOn = DateTime.Now.AddDays(-20),
+                            PublishedOn = DateTime.Now.AddDays(-16),
                             Tags = context.Tags.Take(3).ToList(),
                             Image = "2.jpeg",
                             Url = "nodejs",
@@ -87,7 +87,7 @@ namespace BloggApp.Data.Concrete.EfCore
                             Title = "React",
                             Content = "React dersleri",
                             IsActive = true,
-                            PublishedOn = DateTime.Now.AddDays(-20),
+                            PublishedOn = DateTime.Now.AddDays(-15),
                             Tags = context.Tags.Take(3).ToList(),
                             Image = "1.jpeg",
                             Url = "react",
@@ -96,9 +96,9 @@ namespace BloggApp.Data.Concrete.EfCore
                         new Post
                         {
                             Title = "Docker",
-                            Content = "DjDockerango dersleri",
+                            Content = "Docker dersleri",
                             IsActive = true,
-                            PublishedOn = DateTime.Now.AddDays(-20),
+                            PublishedOn = DateTime.Now.AddDays(-12),
                             Tags = context.Tags.Take(3).ToList(),
                             Image = "2.jpeg",
                             Url = "docker",
