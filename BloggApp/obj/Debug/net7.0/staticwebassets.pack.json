@@ -17,6 +17,18 @@
       "PackagePath": "staticwebassets/img/3.jpeg"
     },
     {
+      "Id": "/Users/mertkezer/AspnetcoreDers/BloggApp/wwwroot/img/avatar.jpg",
+      "PackagePath": "staticwebassets/img/avatar.jpg"
+    },
+    {
+      "Id": "/Users/mertkezer/AspnetcoreDers/BloggApp/wwwroot/img/p1.jpg",
+      "PackagePath": "staticwebassets/img/p1.jpg"
+    },
+    {
+      "Id": "/Users/mertkezer/AspnetcoreDers/BloggApp/wwwroot/img/p2.jpg",
+      "PackagePath": "staticwebassets/img/p2.jpg"
+    },
+    {
       "Id": "/Users/mertkezer/AspnetcoreDers/BloggApp/wwwroot/lib/bootstrap-icons/bootstrap-icons.svg",
       "PackagePath": "staticwebassets/lib/bootstrap-icons/bootstrap-icons.svg"
     },

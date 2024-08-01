@@ -4,11 +4,57 @@
         <div class="bg-white p-4">
             <h1 class="h4 mb-4">@Model.Title</h1>
             <div class="tags">
-                <a href="#" class="badge bg-danger bg-opacity-10 text-danger mb-2 fw-bold">Web Development</a>
-                <a href="#" class="badge bg-danger bg-opacity-10 text-danger mb-2 fw-bold">Php</a>
+                @foreach(var tag in Model.Tags)
+                {
+                <a href="/posts/details/@tag.Url"
+                    class="badge bg-@tag.Color bg-opacity-10 text-@tag.Color mb-2 fw-bold">@tag.Text</a>
+                }
             </div>
             <img src="~/img/@Model.Image" class="img-fluid rounded" alt="">
             <div>@Model.Content</div>
+        </div>
+        <div class="bg-white mt-3">
+            <div class="card border-0">
+                <div class="card-header pb-0">
+                    <h4><span id="commentCount"> @Model.Comments.Count() adet yorum </span></h4>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="comments">
+                    @foreach( var comment in Model.Comments)
+                    {
+                    <div class="my-4 d-flex">
+                        <img src="/img/@comment.User.Image" alt="" class="avatar rounded-circle float-start me-3">
+                        <div>
+
+                            <div class="mb-2 d-flex">
+                                <h6 class="me-2">@comment.User.UserName</h6>
+                                <small>@comment.PublishedOn.ToString("D")</small>
+                            </div>
+                            <p>@comment.Text</p>
+                        </div>
+                    </div>
+                    }
+                </div>
+                <hr class="my-4">
+                <div>
+                    <h4>Yorum Ekle</h4>
+                    <form action="/posts/AddComment" method="post">
+                        <input type="hidden" name="PostId" id="PostId" value="@Model.PostId">
+                        <div class="mb-4">
+                            <label for="UserName" class="form-label">Kullanıcı Adı</label>
+                            <input type="text" name="UserName" id="UserName" class="form-control">
+                        </div>
+                        <div class="mb-4">
+                            <label for="Text" class="form-label">Mesaj</label>
+                            <textarea type="text" name="Text" id="Text" class="form-control"></textarea>
+                        </div>
+                        <div class="mb-4">
+                            <button type="submit" class="btn btn-primary" id="btnYorumKayit">Kaydet</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
     <div class="col-lg-4">
@@ -16,3 +62,44 @@
         <vc:new-posts></vc:new-posts>
     </div>
 </div>
+@section Scripts {
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#btnYorumKayit").click(function () {
+            $.ajax({
+                type: 'POST',
+                url: '@Url.Action("AddComment")',
+                dataType: 'json',
+                data: {
+                    PostId: $('#PostId').val(),
+                    UserName: $('#UserName').val(),
+                    Text: $('#Text').val(),
+                },
+                success: function (response) {
+                    var date = new Date(response.publishedOn);
+                    $(".comments").append(`
+            <div class="my-4 d-flex">
+                <img src="/img/${response.image}" alt="" class="avatar rounded-circle float-start me-3">
+                <div>
+                    <div class="mb-2 d-flex">
+                        <h6 class="me-2">${response.userName}</h6>
+                        <small>${date.toLocaleDateString}</small>
+                    </div>
+                    <p>${response.text}</p>
+                </div>
+            </div>
+        `);
+                    // Formu temizle
+                    $("#UserName").val('');
+                    $("#Text").val('');
+                    var adet = parseInt($("#commentCount").text());
+                    $("#commentCount").text(adet + 1 + " adet yorum");
+                }
+            });
+            return false;
+        });
+    });
+</script>
+}

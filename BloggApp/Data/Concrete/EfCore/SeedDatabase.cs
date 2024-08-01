@@ -18,8 +18,8 @@ namespace BloggApp.Data.Concrete.EfCore
                 if (!context.Users.Any())
                 {
                     context.Users.AddRange(
-                        new User { UserName = "sadikturan" },
-                        new User { UserName = "cinarturan" }
+                        new User { UserName = "altay", Image = "p1.jpg", Name = "Altay Turan", Email = "altayturan@gmail.com", Password = "5454" },
+                        new User { UserName = "baykutay", Image = "p2.jpg", Name = "Baykutay Turan", Email = "baykutayturan@gmail.com", Password = "5454" }
                     );
                     context.SaveChanges();
                 }
@@ -27,11 +27,11 @@ namespace BloggApp.Data.Concrete.EfCore
                 if (!context.Tags.Any())
                 {
                     context.Tags.AddRange(
-                        new Tag { Text = "web programlama", Url = "web-programlama" },
-                        new Tag { Text = "backend", Url = "backend" },
-                        new Tag { Text = "frontend", Url = "frontend" },
-                        new Tag { Text = "php", Url = "php" },
-                        new Tag { Text = "fullstack", Url = "fullstack" }
+                        new Tag { Text = "web programlama", Url = "web-programlama", Color = TagColors.warning },
+                        new Tag { Text = "backend", Url = "backend", Color = TagColors.warning },
+                        new Tag { Text = "frontend", Url = "frontend", Color = TagColors.success },
+                        new Tag { Text = "php", Url = "php", Color = TagColors.primary },
+                        new Tag { Text = "fullstack", Url = "fullstack", Color = TagColors.secondary }
                     );
                     context.SaveChanges();
                 }
@@ -47,7 +47,11 @@ namespace BloggApp.Data.Concrete.EfCore
                             Tags = context.Tags.Take(3).ToList(),
                             Url = "aspnet-core",
                             Image = "1.jpeg",
-                            UserId = 1
+                            UserId = 1,
+                            Comments = new List<Comment> {
+                                new Comment {Text = "iyi bir kurs", PublishedOn = new DateTime(), UserId = 1},
+                                new Comment {Text = "öğretici ama mikrofonda sorun var", PublishedOn = new DateTime(), UserId = 2}
+                                 }
                         },
                         new Post
                         {

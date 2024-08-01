@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/mertkezer/AspnetcoreDers/BloggApp/BloggApp.csproj": {}
+    "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/BloggApp.csproj": {}
   },
   "projects": {
-    "/Users/mertkezer/AspnetcoreDers/BloggApp/BloggApp.csproj": {
+    "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/BloggApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/mertkezer/AspnetcoreDers/BloggApp/BloggApp.csproj",
+        "projectUniqueName": "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/BloggApp.csproj",
         "projectName": "BloggApp",
-        "projectPath": "/Users/mertkezer/AspnetcoreDers/BloggApp/BloggApp.csproj",
+        "projectPath": "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/BloggApp.csproj",
         "packagesPath": "/Users/mertkezer/.nuget/packages/",
-        "outputPath": "/Users/mertkezer/AspnetcoreDers/BloggApp/obj/",
+        "outputPath": "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/mertkezer/.nuget/NuGet/NuGet.Config"

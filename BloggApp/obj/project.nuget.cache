@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EvosKJw3fk4=",
+  "dgSpecHash": "uwUqiZQ9WPE=",
   "success": true,
-  "projectFilePath": "/Users/mertkezer/AspnetcoreDers/BloggApp/BloggApp.csproj",
+  "projectFilePath": "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/BloggApp.csproj",
   "expectedPackageFiles": [
     "/Users/mertkezer/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/mertkezer/.nuget/packages/microsoft.data.sqlite.core/7.0.10/microsoft.data.sqlite.core.7.0.10.nupkg.sha512",
