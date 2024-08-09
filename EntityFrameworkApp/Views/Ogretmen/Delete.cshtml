@@ -1,0 +1,12 @@
+@model Ogretmen
+<div>
+    <p>
+        @Model.Ad Öğretmenini Silmek İstiyor musunuz?
+    </p>
+    <form action="" method="post">
+        <input type="hidden" asp-for="@Model.OgretmenId">
+        <button type="submit" class="btn btn-danger">Yes</button>
+        <a href="/" class="btn btn-primary">No</a>
+    </form>
+    </p>
+</div>
