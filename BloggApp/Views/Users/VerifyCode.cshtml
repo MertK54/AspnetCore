@@ -1,0 +1,23 @@
+@model BloggApp.Models.VerifyCodeViewModel
+
+@{
+    ViewData["Title"] = "Doğrulama Kodu";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form asp-action="VerifyCode" method="post">
+    <div class="form-group">
+        <label asp-for="Email" class="control-label"></label>
+        <input asp-for="Email" class="form-control" readonly />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Code" class="control-label"></label>
+        <input asp-for="Code" class="form-control" />
+        <span asp-validation-for="Code" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Doğrula" class="btn btn-primary" />
+    </div>
+</form>

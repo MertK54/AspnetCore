@@ -18,5 +18,10 @@ namespace BloggApp.Data.Concrete
             _context.Users.Add(user);
             _context.SaveChanges();
         }
+        public void SaveUser(User user)
+        {
+            _context.Users.Update(user);
+            _context.SaveChanges(); // Değişiklikleri kaydet
+        }
     }
 }

@@ -5,4 +5,5 @@ public interface IUserRepository
 {
     IQueryable<User> Users { get; }
     void CreateUser(User users);
+    void SaveUser(User users);
 }

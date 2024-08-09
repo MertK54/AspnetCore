@@ -10,4 +10,6 @@ public class User
     public string? Image { get; set; }
     public List<Post> Posts { get; set; } = new List<Post>();
     public List<Comment> Comments { get; set; } = new List<Comment>();
+    public string? VerificationCode { get; set; }
+    public bool IsVerified { get; set; } 
 }

@@ -17,6 +17,8 @@ builder.Services.AddScoped<IPostRepository, EfPostRepository>();
 builder.Services.AddScoped<ITagRepository, EfTagRepositoy>();
 builder.Services.AddScoped<ICommentRepository, EfCommentRepositoy>();
 builder.Services.AddScoped<IUserRepository, EfUserRepositoy>();
+builder.Services.AddScoped<EmailService>();
+
 //IpostRepository bir sanal sınıf, bu her çağrıldığında EfPostRepositoy den nesne üretip bize göndericek
 //AddScoped => her http isteğinde aynı nesne
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(options => {
