@@ -1,0 +1,65 @@
+/* Base styles *
+/* Banner styles */
+.banner {
+    mix-blend-mode: luminosity;
+    position: relative;
+    width: 15rem;
+    height: 30rem;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: mix-blend-mode 0.3s ease;
+}
+
+.banner:hover {
+    cursor: pointer;
+    mix-blend-mode: normal;
+}
+
+.banner-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.banner a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Banner image wrapper */
+.banner-wrapper {
+    position: relative;
+    width: 100%; /* Kapsayıcının genişliği */
+    height: 20rem; /* Kapsayıcının yüksekliği */
+    overflow: hidden; /* Fazla taşan kısmı gizler */
+}
+
+.banner-wrapper img {
+    position: absolute; /* Resmi konumlandırmak için */
+    top: 50%; /* Dikey ortalamak için */
+    left: 50%; /* Yatay ortalamak için */
+    transform: translate(-50%, -50%); /* Resmi merkezde konumlandırmak için */
+    width: 125%; /* Genişliği orantılı olarak ayarlar */
+    height: 100%; /* Yüksekliği kapsayıcının yüksekliğine göre ayarlar */
+    object-fit: cover; /* Görselin kapsayıcıyı doldurmasını sağlar */
+}
+
+/* Vertical line styles */
+.vertical-line {
+    border-left: 2px solid #ccc; /* Çizginin rengi ve kalınlığı */
+    height: 20rem; /* Çizginin yüksekliği */
+    width: 2px; /* Çizginin kalınlığı */
+    margin-left: 1rem; /* Çizginin etrafında boşluk bırakır */
+}
