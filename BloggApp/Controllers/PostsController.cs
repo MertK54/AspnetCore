@@ -15,22 +15,29 @@ namespace BlogApp.Controllers
         private IPostRepository _postRepository;
         private ICommentRepository _commentRepository;
         private ITagRepository _tagRepository;
-        public PostsController(IPostRepository postRepository, ICommentRepository commentRepository, ITagRepository tagRepository)
+        private readonly IWebHostEnvironment _environment;
+
+        public PostsController(IPostRepository postRepository, ICommentRepository commentRepository, ITagRepository tagRepository, IWebHostEnvironment environment)
         {
+            _environment = environment;
             _postRepository = postRepository;
             _commentRepository = commentRepository;
             _tagRepository = tagRepository;
         }
         public async Task<IActionResult> Index(string tag)
         {
-            var posts = _postRepository.Posts.Where(i => i.IsActive);
+            var postsQuery = _postRepository.Posts
+                .Include(p => p.User)
+                .Where(i => i.IsActive);
 
-            if(!string.IsNullOrEmpty(tag))
+            if (!string.IsNullOrEmpty(tag))
             {
-                posts = posts.Where(x => x.Tags.Any(t => t.Url == tag));
+                postsQuery = postsQuery
+                    .Where(x => x.Tags.Any(t => t.Url == tag));
             }
 
-            return View( new PostsViewModel { Posts = await posts.ToListAsync() });
+            var posts = await postsQuery.ToListAsync();
+            return View(new PostsViewModel { Posts = posts });
         }
 
         public async Task<IActionResult> Details(string url)
@@ -76,27 +83,43 @@ namespace BlogApp.Controllers
 
         [HttpPost]
         [Authorize]
-        public IActionResult Create(PostCreateViewModel model)
+        public async Task<IActionResult> Create(PostCreateViewModel model)
         {
-            if(ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
-                _postRepository.CreatePost(
-                    new Post {
-                        Title = model.Title,
-                        Content = model.Content,
-                        Url = model.Url,
-                        UserId = int.Parse(userId ?? ""),
-                        PublishedOn = DateTime.Now,
-                        Image = "1.jpg",
-                        IsActive = false
+                // Dosya yükleme işlemi
+                string uniqueFileName = "default.png";
+                if (model.Image != null)
+                {
+                    var uploadsFolder = Path.Combine(_environment.WebRootPath, "uploads");
+                    uniqueFileName = Guid.NewGuid().ToString() + "_" + model.Image.FileName;
+                    var filePath = Path.Combine(uploadsFolder, uniqueFileName);
+                    using (var fileStream = new FileStream(filePath, FileMode.Create))
+                    {
+                        await model.Image.CopyToAsync(fileStream);
                     }
-                );
+                }
+
+                // Yeni post oluşturuluyor
+                var post = new Post
+                {
+                    Title = model.Title,
+                    Content = model.Content,
+                    Description = model.Description,
+                    Url = model.Url,
+                    UserId = int.Parse(userId ?? ""),
+                    PublishedOn = DateTime.Now,
+                    Image = uniqueFileName,
+                    IsActive = false
+                };
+
+                _postRepository.CreatePost(post);
                 return RedirectToAction("Index");
             }
             return View(model);
-        }       
+        }     
 
         [Authorize]
         public async Task<IActionResult> List()
@@ -142,7 +165,7 @@ namespace BlogApp.Controllers
 
         [Authorize]
         [HttpPost]
-        public IActionResult Edit(PostCreateViewModel model, int[] tagIds)
+        public async Task<IActionResult> Edit(PostCreateViewModel model, int[] tagIds)
         {
             if(ModelState.IsValid)
             {
@@ -153,6 +176,17 @@ namespace BlogApp.Controllers
                     Content = model.Content,
                     Url = model.Url
                 };
+                if (model.Image != null)
+                {
+                    var uploadsFolder = Path.Combine(_environment.WebRootPath, "uploads");
+                    var uniqueFileName = Guid.NewGuid().ToString() + "_" + model.Image.FileName;
+                    var filePath = Path.Combine(uploadsFolder, uniqueFileName);
+                    using (var fileStream = new FileStream(filePath, FileMode.Create))
+                    {
+                        await model.Image.CopyToAsync(fileStream);
+                    }
+                    entityToUpdate.Image = uniqueFileName;
+                }
 
                 if(User.FindFirstValue(ClaimTypes.Role) == "admin") 
                 {

@@ -10,7 +10,7 @@
                     <a href="/posts/tag/@tag.Url" class="badge bg-@tag.Color bg-opacity-10 text-@tag.Color mb-2 fw-bold">@tag.Text</a>
                 } 
             </div>
-            <img src="~/img/@Model.Image" class="img-fluid rounded" alt="">
+            <img src="~/uploads/@Model.Image" class="img-fluid rounded" alt="">
             <ul class="list-inline my-3 ">
                 <li class="list-inline-item"><i class="bi bi-calendar"></i> @Model.PublishedOn.ToString("d")</li>
                 <li class="list-inline-item"><i class="bi bi-person-circle"></i> <a href="/profile/@Model.User.UserName">@Model.User.Name</a> </li>
@@ -28,7 +28,7 @@
                         @foreach(var comment in Model.Comments)
                         {
                             <div class="my-4 d-flex">
-                                <img src="/img/@comment.User.Image" alt="" class="avatar rounded-circle float-start me-3">
+                                <img src="/img/@comment.User.Image" alt="" class="float-start me-3" style="width: 60px; height:50px;border-radius: 50%;">
                                 <div>
                                     <div class="mb-2 d-flex">
                                         <h6 class="me-2">

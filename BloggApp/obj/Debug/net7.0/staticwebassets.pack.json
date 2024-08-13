@@ -21,12 +21,56 @@
       "PackagePath": "staticwebassets/img/avatar.jpg"
     },
     {
+      "Id": "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/wwwroot/img/banner1.png",
+      "PackagePath": "staticwebassets/img/banner1.png"
+    },
+    {
+      "Id": "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/wwwroot/img/banner2.png",
+      "PackagePath": "staticwebassets/img/banner2.png"
+    },
+    {
+      "Id": "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/wwwroot/img/banner3.png",
+      "PackagePath": "staticwebassets/img/banner3.png"
+    },
+    {
+      "Id": "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/wwwroot/img/banner4.png",
+      "PackagePath": "staticwebassets/img/banner4.png"
+    },
+    {
+      "Id": "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/wwwroot/img/banner5.png",
+      "PackagePath": "staticwebassets/img/banner5.png"
+    },
+    {
+      "Id": "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/wwwroot/img/default.png",
+      "PackagePath": "staticwebassets/img/default.png"
+    },
+    {
+      "Id": "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/wwwroot/img/nodejs.webp",
+      "PackagePath": "staticwebassets/img/nodejs.webp"
+    },
+    {
       "Id": "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/wwwroot/img/p1.jpg",
       "PackagePath": "staticwebassets/img/p1.jpg"
     },
     {
+      "Id": "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/wwwroot/img/p1.png",
+      "PackagePath": "staticwebassets/img/p1.png"
+    },
+    {
+      "Id": "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/wwwroot/img/p11.webp",
+      "PackagePath": "staticwebassets/img/p11.webp"
+    },
+    {
       "Id": "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/wwwroot/img/p2.jpg",
       "PackagePath": "staticwebassets/img/p2.jpg"
+    },
+    {
+      "Id": "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/wwwroot/img/p3.jpg",
+      "PackagePath": "staticwebassets/img/p3.jpg"
+    },
+    {
+      "Id": "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/wwwroot/img/sevval.png",
+      "PackagePath": "staticwebassets/img/sevval.png"
     },
     {
       "Id": "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/wwwroot/lib/bootstrap-icons/bootstrap-icons.svg",
@@ -8407,6 +8451,14 @@
     {
       "Id": "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/wwwroot/lib/bootstrap/scss/vendor/_rfs.scss",
       "PackagePath": "staticwebassets/lib/bootstrap/scss/vendor/_rfs.scss"
+    },
+    {
+      "Id": "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/wwwroot/uploads/d0a24612-d53e-47a8-b636-7525e03f2dec_blog-homepage.jpeg",
+      "PackagePath": "staticwebassets/uploads/d0a24612-d53e-47a8-b636-7525e03f2dec_blog-homepage.jpeg"
+    },
+    {
+      "Id": "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/wwwroot/uploads/dc4aec8f-dff1-4e21-86b9-b3aab0cf35c3_prideprejudice.jpg",
+      "PackagePath": "staticwebassets/uploads/dc4aec8f-dff1-4e21-86b9-b3aab0cf35c3_prideprejudice.jpg"
     },
     {
       "Id": "obj/Debug/net7.0/staticwebassets/msbuild.BloggApp.Microsoft.AspNetCore.StaticWebAssets.props",

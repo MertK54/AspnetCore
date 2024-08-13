@@ -20,5 +20,6 @@ namespace BloggApp.Models
         public string? Url { get; set; }
         public bool IsActive { get; set; }
         public List<Tag> Tags { get; set; } = new();
+        public IFormFile? Image { get; set; }
     }
 }

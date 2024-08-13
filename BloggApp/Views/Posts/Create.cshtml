@@ -3,7 +3,7 @@
     <div class="col-12">
         <div class="bg-white p-4">
             <h1>Yeni Post</h1>
-            <form action="Create" method="post">
+            <form action="Create" method="post" enctype="multipart/form-data">
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 <div class="mb-3">
                     <label asp-for="Title" class="form-label"></label>
@@ -25,6 +25,10 @@
                     <input asp-for="Description" class="form-control">
                     <span class="text-danger" asp-validation-for="Description"></span>
                 </div>
+                    <div>
+                        <label for="Image">Fotoğraf Yükle</label>
+                        <input asp-for="Image" type="file" />
+                    </div>
                 
                 
                 <button type="submit" class="btn btn-primary">Oluştur</button>

@@ -2,9 +2,9 @@
 <div class="row">
     <div class="col-12">
         <h2>Post Listesi</h2>
-        <a href="/posts/create" class="btn btn-primary">New Post</a>
+        <a href="/posts/create" class="btn btn-primary my-2">Yeni Post</a>
         <table class="table table-bordered">
-            <thead>
+            <thead >
                 <tr>
                     <th style="width: 200px;">Image</th>
                     <th>Id</th>
@@ -17,13 +17,13 @@
                 @foreach (var i in Model)
                 {
                     <tr>
-                        <td><img src="@Url.Content("~/img/" + i.Image)" alt="" class="img-fluid" style="height: 100px; width: 150px;"></td>
+                        <td><img src="@Url.Content("~/uploads/" + i.Image)" alt="" class="img-fluid" style="height: 200px; width: 150px;"></td>
                         <td>@i.PostId</td>
                         <td>@i.Title</td>
                         <td>@i.IsActive</td>
                         <td>
-                            <a href="@Url.Action("Edit", new { id = i.PostId })" class="btn btn-sm btn-primary">Edit</a>
-                            <a href="@Url.Action("Delete", new { id = i.PostId })" class="btn btn-sm btn-danger">Delete</a>
+                            <a href="@Url.Action("Edit", new { id = i.PostId })" class="btn btn-sm btn-primary">Düzenle</a>
+                            <a href="@Url.Action("Delete", new { id = i.PostId })" class="btn btn-sm btn-danger">Sil</a>
                         </td>
                     </tr>
                 }

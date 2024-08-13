@@ -1,1 +1,55 @@
-<a asp-controller="Posts" asp-action="Index">Postlara Git</a>
+@model List<Tag>
+<div class="container-fluid">
+    <h1 style="text-align: center; letter-spacing: .5rem; font-size: 3rem; margin: 3rem; font-weight: 600;">
+        Hayata Dair Herşey!
+    </h1>
+    <hr>
+    <ul class="list-inline d-flex flex-wrap gap-2 justify-content-center">
+        @foreach (var tag in Model)
+        {
+            <li class="list-inline-item">
+                <a href="/posts/tag/@tag.Url" class="btn btn-sm p-2">@tag.Text</a>
+            </li>
+        }
+    </ul>
+    <hr>
+    <div class="container-fluid mt-5">
+        <div style="display: flex; gap: 1rem;">
+            <div 
+                style="mix-blend-mode: luminosity; position: relative; width: 15rem; height: 30rem; background-image: url('/img/banner1.png'); background-size: cover; background-position: center; border-radius: 8px; overflow: hidden;"
+                onmouseover="this.style.mixBlendMode='normal';"
+                onmouseout="this.style.mixBlendMode='luminosity';"
+            >
+                <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 1rem; color: #fff; font-size: 1.5rem; font-weight: bold; text-align: center; background: rgba(0, 0, 0, 0.5); backdrop-filter: blur(5px); border-top: 1px solid rgba(255, 255, 255, 0.3);">Web Geliştirme</div>
+            </div>
+            <div 
+                style="mix-blend-mode: luminosity; position: relative; width: 15rem; height: 30rem; background-image: url('/img/banner2.png'); background-size: cover; background-position: center; border-radius: 8px; overflow: hidden;"
+                onmouseover="this.style.mixBlendMode='normal';"
+                onmouseout="this.style.mixBlendMode='luminosity';"
+            >
+                <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 1rem; color: #fff; font-size: 1.5rem; font-weight: bold; text-align: center; background: rgba(0, 0, 0, 0.5); backdrop-filter: blur(5px); border-top: 1px solid rgba(255, 255, 255, 0.3);">Dizi/Film</div>
+            </div>
+            <div 
+                style="mix-blend-mode: luminosity; position: relative; width: 15rem; height: 30rem; background-image: url('/img/banner3.png'); background-size: cover; background-position: center; border-radius: 8px; overflow: hidden;"
+                onmouseover="this.style.mixBlendMode='normal';"
+                onmouseout="this.style.mixBlendMode='luminosity';"
+            >
+                <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 1rem; color: #fff; font-size: 1.5rem; font-weight: bold; text-align: center; background: rgba(0, 0, 0, 0.5); backdrop-filter: blur(5px); border-top: 1px solid rgba(255, 255, 255, 0.3);">Kitap</div>
+            </div>
+            <div 
+                style="mix-blend-mode: luminosity; position: relative; width: 15rem; height: 30rem; background-image: url('/img/banner4.png'); background-size: cover; background-position: center; border-radius: 8px; overflow: hidden;"
+                onmouseover="this.style.mixBlendMode='normal';"
+                onmouseout="this.style.mixBlendMode='luminosity';"
+            >
+                <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 1rem; color: #fff; font-size: 1.5rem; font-weight: bold; text-align: center; background: rgba(0, 0, 0, 0.5); backdrop-filter: blur(5px); border-top: 1px solid rgba(255, 255, 255, 0.3);">Gündem</div>
+            </div>
+            <div 
+                style="mix-blend-mode: luminosity; position: relative; width: 15rem; height: 30rem; background-image: url('/img/banner5.png'); background-size: cover; background-position: center; border-radius: 8px; overflow: hidden;"
+                onmouseover="this.style.mixBlendMode='normal';"
+                onmouseout="this.style.mixBlendMode='luminosity';"
+            >
+                <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 1rem; color: #fff; font-size: 1.5rem; font-weight: bold; text-align: center; background: rgba(0, 0, 0, 0.5); backdrop-filter: blur(5px); border-top: 1px solid rgba(255, 255, 255, 0.3);">Oyun</div>
+            </div>
+        </div>
+    </div>
+</div>
