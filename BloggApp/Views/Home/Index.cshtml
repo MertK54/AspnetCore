@@ -1,4 +1,4 @@
-@model List<Tag>
+@model BloggApp.Models.IndexViewModel
 <link rel="stylesheet" href="/css/HomeIndex.css">
 <div class="container-fluid">
     <h1 class="text-center my-4 display-3 fw-bold" style="letter-spacing: .5rem;">
@@ -7,7 +7,7 @@
     <h4 class="text-center my-4" style="color:rgb(85, 85, 85);font-weight:100;">Düşüncelerini, ilhamını ve hikayelerini bizimle paylaş. Burada senin sesin duyulacak.</h4>
     <hr>
     <ul class="list-inline d-flex flex-wrap gap-2 justify-content-center">
-        @foreach (var tag in Model)
+        @foreach (var tag in Model.Tags)
         {
             <li class="list-inline-item">
                 <a href="/posts/tag/@tag.Url" class="btn btn-sm p-2">@tag.Text</a>
@@ -27,20 +27,19 @@
                 <a href="/posts/tag/kitap" class="banner-text">Kitap</a>
             </div>
             <div class="banner" style="background-image: url('/img/banner4.png');">
-                <a href="/posts/tag/gündem" class="banner-text">Gündem</a>
+                <a href="/posts/tag/gundem" class="banner-text">Gündem</a>
             </div>
             <div class="banner" style="background-image: url('/img/banner5.png');">
                 <a href="/posts/tag/oyun" class="banner-text">Oyun</a>
             </div>
         </div>
     </div>
-    <div class="container-fluid"style="margin-top: 5rem;">
-        <hr>
+    <div class="container-fluid"style="margin-top: 10rem;">
         <div class="container">
-            <div class="row align-items-start pt-5">
+            <div class="row align-items-start">
                 <div class="col-md-7">
-                    <h1 class="mb-4 mt-4" style="font-size: 4.5rem; font-weight: 800;letter-spacing: -.2rem;text-transform: uppercase;">"Üye ol ve topluluğa katıl."</h1>
-                    <h4 class="description pt-4">Görüşlerini paylaşmak, firkilere yorum yapmak için platform mu arıyorsun? O zaman doğru yerdesin! Blogumuzdaki tavsiyelerle keyifle vakit geçirecek yeni keşifler yap. Şimdi kaydolarak bu zengin içeriğe ücretsiz ulaş!</h4> 
+                    <h1 class="mb-4 boyama" style="font-size: 4.5rem; font-weight: 800;letter-spacing: -.2rem;text-transform: uppercase;">"Üye ol ve topluluğa katıl."</h1>
+                    <h4 class="description">Görüşlerini paylaşmak, firkilere yorum yapmak için platform mu arıyorsun? O zaman doğru yerdesin! Blogumuzdaki tavsiyelerle keyifle vakit geçirecek yeni keşifler yap. Şimdi kaydolarak bu zengin içeriğe ücretsiz ulaş!</h4> 
                 </div>
                 <div class="col-md-1 d-flex align-items-center">
                     <div class="vertical-line"></div>
@@ -49,7 +48,54 @@
                     <div class="banner-wrapper banner">
                         <img src="/img/banner4.png" alt="Banner Image">
                     </div>
-            </div>
+                </div>
             </div>
         </div>
+        <div class="container" style="margin-top: 10rem;">
+            <div class="row align-items-start">
+                <div class="col-md-4">
+                    <div class="banner-wrapper banner">
+                        <img src="/img/fikirlerinipaylas.png" alt="Banner Image"style="width: 100%;">
+                    </div>
+                </div>
+                <div class="col-md-1 d-flex align-items-center">
+                    <div class="vertical-line"></div>
+                </div>
+                <div class="col-md-7">
+                    <h1 class="mb-4 boyama2" style="font-size: 4.5rem; font-weight: 800;letter-spacing: -.2rem;text-transform: uppercase;text-align:right; position: relative;">"FİKİRLERİNİ paylaş."</h1>
+                    <h4 class="description pt-4" style="text-align: right;">Görüşlerini paylaşmak, firkilere yorum yapmak için platform mu arıyorsun? O zaman doğru yerdesin! Blogumuzdaki tavsiyelerle keyifle vakit geçirecek yeni keşifler yap. Şimdi kaydolarak bu zengin içeriğe ücretsiz ulaş!</h4> 
+                </div>
+            </div>
+        </div>
+</div>
+
+<div class="bg-white p-4" style="margin-top: 10rem;">
+    <div style="display: flex;">
+            <h1 class="mb-4" style="font-size: 4.5rem; font-weight: 800;letter-spacing: -.2rem;text-transform: uppercase;">Popüler Postlar</h1>
+                <h4> <a href="/posts" class="highlighted"> Postlara Git</a></h4>
+ </div>
+            
+            <div class="row pt-4">
+                @foreach(var post in Model.Posts)
+                {
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card" style="box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.222); width: 100%;">
+                        <div class="card-img-top " style="width: 100%; height: 20rem; overflow: hidden;">
+                            <img src="~/uploads/@post.Image" class="effect" alt="" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
+                        </div>
+                        <div class="card-body" >
+                            <h5><a href="/posts/details/@post.Url" class="text-decoration-none;" style="color: rgb(18, 18, 18);font-weight: 600;">@post.Title</a></h5>
+                            <p>@post.Content</p>
+                            <div style="display: flex;align-items: center;">
+                                    <img src="~/img/@post.User.Image" style="width: 40px; height:40px;border-radius: 50%;margin-right: 1rem;"/>
+                                    <div style="display: flex; flex-direction: column;">
+                                        <p style="margin:0px ">@post.User.Name</p>
+                                        <p style="margin:0px;font-size: .8rem;color:rgb(127, 121, 121) ">@post.PublishedOn.ToString("dd MMMM yyyy")</p>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                }
+            </div>
 </div>

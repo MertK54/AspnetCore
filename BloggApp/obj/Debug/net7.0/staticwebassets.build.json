@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "tOdIfI1Ep0kDHkzt8oJ8namFvc7BrTo3ZptW9cmz8yM=",
+  "Hash": "FJ9AXsoqH3Qj6/J2Vu5AG5sShqqcdToSnNUjHm2ebug=",
   "Source": "BloggApp",
   "BasePath": "_content/BloggApp",
   "Mode": "Default",
@@ -16,6 +16,25 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/wwwroot/css/HomeIndex.css",
+      "SourceId": "BloggApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/wwwroot/",
+      "BasePath": "_content/BloggApp",
+      "RelativePath": "css/HomeIndex.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/HomeIndex.css"
+    },
     {
       "Identity": "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/wwwroot/css/style.css",
       "SourceId": "BloggApp",
@@ -224,6 +243,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/img/default.png"
+    },
+    {
+      "Identity": "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/wwwroot/img/fikirlerinipaylas.png",
+      "SourceId": "BloggApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/wwwroot/",
+      "BasePath": "_content/BloggApp",
+      "RelativePath": "img/fikirlerinipaylas.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/img/fikirlerinipaylas.png"
     },
     {
       "Identity": "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/wwwroot/img/nodejs.webp",
@@ -40164,12 +40202,12 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/scss/vendor/_rfs.scss"
     },
     {
-      "Identity": "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/wwwroot/uploads/d0a24612-d53e-47a8-b636-7525e03f2dec_blog-homepage.jpeg",
+      "Identity": "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/wwwroot/uploads/f55322d9-57cc-48ff-a851-18c3347d96e8_blog-homepage.jpeg",
       "SourceId": "BloggApp",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/wwwroot/",
       "BasePath": "_content/BloggApp",
-      "RelativePath": "uploads/d0a24612-d53e-47a8-b636-7525e03f2dec_blog-homepage.jpeg",
+      "RelativePath": "uploads/f55322d9-57cc-48ff-a851-18c3347d96e8_blog-homepage.jpeg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -40180,26 +40218,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/uploads/d0a24612-d53e-47a8-b636-7525e03f2dec_blog-homepage.jpeg"
-    },
-    {
-      "Identity": "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/wwwroot/uploads/dc4aec8f-dff1-4e21-86b9-b3aab0cf35c3_prideprejudice.jpg",
-      "SourceId": "BloggApp",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/wwwroot/",
-      "BasePath": "_content/BloggApp",
-      "RelativePath": "uploads/dc4aec8f-dff1-4e21-86b9-b3aab0cf35c3_prideprejudice.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/uploads/dc4aec8f-dff1-4e21-86b9-b3aab0cf35c3_prideprejudice.jpg"
+      "OriginalItemSpec": "wwwroot/uploads/f55322d9-57cc-48ff-a851-18c3347d96e8_blog-homepage.jpeg"
     }
   ]
 }

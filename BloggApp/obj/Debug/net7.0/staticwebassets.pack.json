@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/wwwroot/css/HomeIndex.css",
+      "PackagePath": "staticwebassets/css/HomeIndex.css"
+    },
+    {
       "Id": "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/wwwroot/css/style.css",
       "PackagePath": "staticwebassets/css/style.css"
     },
@@ -43,6 +47,10 @@
     {
       "Id": "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/wwwroot/img/default.png",
       "PackagePath": "staticwebassets/img/default.png"
+    },
+    {
+      "Id": "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/wwwroot/img/fikirlerinipaylas.png",
+      "PackagePath": "staticwebassets/img/fikirlerinipaylas.png"
     },
     {
       "Id": "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/wwwroot/img/nodejs.webp",
@@ -8453,12 +8461,8 @@
       "PackagePath": "staticwebassets/lib/bootstrap/scss/vendor/_rfs.scss"
     },
     {
-      "Id": "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/wwwroot/uploads/d0a24612-d53e-47a8-b636-7525e03f2dec_blog-homepage.jpeg",
-      "PackagePath": "staticwebassets/uploads/d0a24612-d53e-47a8-b636-7525e03f2dec_blog-homepage.jpeg"
-    },
-    {
-      "Id": "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/wwwroot/uploads/dc4aec8f-dff1-4e21-86b9-b3aab0cf35c3_prideprejudice.jpg",
-      "PackagePath": "staticwebassets/uploads/dc4aec8f-dff1-4e21-86b9-b3aab0cf35c3_prideprejudice.jpg"
+      "Id": "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/wwwroot/uploads/f55322d9-57cc-48ff-a851-18c3347d96e8_blog-homepage.jpeg",
+      "PackagePath": "staticwebassets/uploads/f55322d9-57cc-48ff-a851-18c3347d96e8_blog-homepage.jpeg"
     },
     {
       "Id": "obj/Debug/net7.0/staticwebassets/msbuild.BloggApp.Microsoft.AspNetCore.StaticWebAssets.props",

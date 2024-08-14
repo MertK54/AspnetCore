@@ -13,16 +13,32 @@ namespace BloggApp.Controllers
     
     public class HomeController:Controller
     {
-        private readonly ITagRepository _tagRepository;
+        private IPostRepository _postRepository;
+        private ITagRepository _tagRepository;
 
-        public HomeController(ITagRepository tagRepository)
+
+        public HomeController(IPostRepository postRepository,ITagRepository tagRepository)
         {
+            _postRepository = postRepository;
             _tagRepository = tagRepository;
         }
         [HttpGet]
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View(_tagRepository.Tags.ToList());
+            var postsQuery = _postRepository.Posts
+                .Include(p => p.User)
+                .Where(i => i.IsActive);
+
+            var posts = await postsQuery.ToListAsync();
+
+            var tags = await _tagRepository.Tags.ToListAsync();
+
+            var viewModel = new IndexViewModel
+            {
+                Posts = posts,
+                Tags = tags
+            };
+            return View(viewModel);
         }
     }
 }

@@ -1,5 +1,5 @@
-﻿namespace BloggApp.Entity;
-
+﻿using BloggApp.Entity;
+using Microsoft.EntityFrameworkCore;
 public class Post
 {
     public int PostId { get; set; }
