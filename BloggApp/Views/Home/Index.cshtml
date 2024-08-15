@@ -1,20 +1,7 @@
 @model BloggApp.Models.IndexViewModel
 <link rel="stylesheet" href="/css/HomeIndex.css">
 <div class="container-fluid">
-    <h1 class="text-center my-4 display-3 fw-bold" style="letter-spacing: .5rem;">
-        Hayata Dair Herşey!
-    </h1>
-    <h4 class="text-center my-4" style="color:rgb(85, 85, 85);font-weight:100;">Düşüncelerini, ilhamını ve hikayelerini bizimle paylaş. Burada senin sesin duyulacak.</h4>
-    <hr>
-    <ul class="list-inline d-flex flex-wrap gap-2 justify-content-center">
-        @foreach (var tag in Model.Tags)
-        {
-            <li class="list-inline-item">
-                <a href="/posts/tag/@tag.Url" class="btn btn-sm p-2">@tag.Text</a>
-            </li>
-        }
-    </ul>
-    <hr>
+    <vc:header></vc:header>
     <div class="container-fluid mt-5">
         <div class="d-flex gap-3">
             <div class="banner" style="background-image: url('/img/banner1.png');">
@@ -63,7 +50,7 @@
                 </div>
                 <div class="col-md-7">
                     <h1 class="mb-4 boyama2" style="font-size: 4.5rem; font-weight: 800;letter-spacing: -.2rem;text-transform: uppercase;text-align:right; position: relative;">"FİKİRLERİNİ paylaş."</h1>
-                    <h4 class="description pt-4" style="text-align: right;">Görüşlerini paylaşmak, firkilere yorum yapmak için platform mu arıyorsun? O zaman doğru yerdesin! Blogumuzdaki tavsiyelerle keyifle vakit geçirecek yeni keşifler yap. Şimdi kaydolarak bu zengin içeriğe ücretsiz ulaş!</h4> 
+                    <h4 class="description pt-4" style="text-align: right;">Fikirlerinle bir etki bırak! Senin düşüncelerin önemli. Paylaşarak yeni bağlar kur, farklı perspektifler keşfet ve bir fikrin gücünü deneyimle!</h4> 
                 </div>
             </div>
         </div>

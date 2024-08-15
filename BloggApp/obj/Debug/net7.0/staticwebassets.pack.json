@@ -1,8 +1,16 @@
 {
   "Files": [
     {
+      "Id": "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/wwwroot/css/Details.css",
+      "PackagePath": "staticwebassets/css/Details.css"
+    },
+    {
       "Id": "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/wwwroot/css/HomeIndex.css",
       "PackagePath": "staticwebassets/css/HomeIndex.css"
+    },
+    {
+      "Id": "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/wwwroot/css/NewPost.css",
+      "PackagePath": "staticwebassets/css/NewPost.css"
     },
     {
       "Id": "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/wwwroot/css/style.css",

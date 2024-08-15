@@ -1,9 +1,10 @@
 @model PostsViewModel
 <div class="row">
-    <div class="col-lg-10">
-        <div class="bg-white p-4">
-            <h1 class="h4 mb-4">Popular Posts</h1>
-            <div class="row">
+    <div class="col-lg-12">
+        <div class="bg-white p-4 pt-0">
+            <vc:header></vc:header>
+            <vc:new-posts></vc:new-posts>
+            <div class="row pt-4">
                 @foreach(var post in Model.Posts)
                 {
                 <div class="col-md-6 col-lg-4 mb-4">
@@ -36,8 +37,8 @@
             </nav>
         </div>
     </div>
-    <div class="col-lg-2">
+    @*<div class="col-lg-2">
         <vc:tags-menu></vc:tags-menu>
         <vc:new-posts></vc:new-posts>
-    </div>
+    </div>*@
 </div>

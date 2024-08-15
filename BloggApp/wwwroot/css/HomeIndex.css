@@ -11,7 +11,15 @@
     overflow: hidden;
     transition: mix-blend-mode 100s ease;
 }
-
+.lexend{
+  color:rgb(0, 0, 0);
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  letter-spacing: .35rem;
+  font-style: normal;
+}
 .banner:hover {
     cursor: pointer;
     mix-blend-mode: normal;
@@ -88,9 +96,9 @@
   .boyama::before {
     content: "";
     position: absolute;
-    top: 100%;
+    top: 0%;
     left: -2rem; /* Başlığın solundan 2rem uzaklıkta başlar */
-    height: 10%;
+    height: 100%;
     width: 3rem; /* Başlangıçta 2rem genişliğinde */
     background-color: #51815386; /* Yeşil bir renk (değiştirebilirsiniz) */
     transition: width 0.3s ease-in-out; /* Geçiş efekti */

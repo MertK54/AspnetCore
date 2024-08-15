@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "FJ9AXsoqH3Qj6/J2Vu5AG5sShqqcdToSnNUjHm2ebug=",
+  "Hash": "7Pf4ltooN1qr3Xhhm9yTPA4RJYTiCd7Y1NmtZ9NVOmI=",
   "Source": "BloggApp",
   "BasePath": "_content/BloggApp",
   "Mode": "Default",
@@ -16,6 +16,25 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/wwwroot/css/Details.css",
+      "SourceId": "BloggApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/wwwroot/",
+      "BasePath": "_content/BloggApp",
+      "RelativePath": "css/Details.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/Details.css"
+    },
     {
       "Identity": "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/wwwroot/css/HomeIndex.css",
       "SourceId": "BloggApp",
@@ -34,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/HomeIndex.css"
+    },
+    {
+      "Identity": "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/wwwroot/css/NewPost.css",
+      "SourceId": "BloggApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/wwwroot/",
+      "BasePath": "_content/BloggApp",
+      "RelativePath": "css/NewPost.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/NewPost.css"
     },
     {
       "Identity": "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/wwwroot/css/style.css",

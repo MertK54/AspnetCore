@@ -1,15 +1,26 @@
 @model List<Post>
-    <div class="card mb-3">
-        <div class="card-header">
-            <h5 class="card-title mb-0">New Posts</h5>
-        </div>
-        <div class="card-body">
-            @foreach(var post in Model)
-            {
-            <div class="mb-3">
-                <h6 class="mb-0"><a href="/posts/details/@post.Url">@post.Title</a></h6>
-            </div>
-            }
-            </ul>
+<link rel="stylesheet" href="/css/NewPost.css">
+
+<div class="d-flex align-items-center">
+    <h5  class="m-0 px-2">Yeni Postlar</h5>
+    <div class="ticker-wrap">
+        <div class="ticker">
+            <span class="item-collection-1">
+                @foreach(var post in Model)
+                {
+                    <span class="item ">
+                        <a class="btn btn-sm p-1" href="/posts/details/@post.Url">@post.Title</a>
+                    </span>
+                }
+            </span>
+            <span class="item-collection-2">
+                @foreach(var post in Model)
+                {
+                    <span class="item">
+                        <a class="btn btn-sm p-1" href="/posts/details/@post.Url">@post.Title</a>
+                    </span>
+                }
+            </span>
         </div>
     </div>
+</div>

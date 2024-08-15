@@ -1,60 +1,74 @@
 @model Post
+<link rel="stylesheet" href="/css/Details.css">
 
 <div class="row">
-    <div class="col-lg-8">
-        <div class="bg-white p-4">
-            <h1 class="h4 mb-4">@Model.Title</h1>
+    <div class="col-lg-12">
+        <vc:header></vc:header>
+        <vc:new-posts></vc:new-posts>
+        <div class="bg-white p-4" style="border: 1px solid;margin-top:5rem; position: relative;">
+            
+            <!-- Positioning user details on the image -->
+            <div style="position: relative;">
+                <img src="~/uploads/@Model.Image" class="img-fluid rounded effect" alt="" style="width: 100%;overflow:hidden;max-height: 40rem; object-fit: cover;">
+                <div style="position: absolute; border:1px solid; top: 0; left: 0; transform: translate(-40%, -50%); background-color: rgb(255, 255, 255); padding: 1rem 2rem; display: flex; align-items: center;">
+                    <img src="~/img/@Model.User.Image" alt="" style="width: 6rem; height: 5rem; border-radius: 50%; margin-right: 0.5rem;">
+                    <div style="display: flex; flex-direction: column;">
+                        <p style="margin:0px; font-weight: 800;">@Model.User.Name</p>
+                        <p style="margin:0px; font-weight: 300;font-size: .8rem; color:rgb(113, 104, 104);">@Model.PublishedOn.ToString("dd MMMM yyyy")</p>
+                    </div>
+                </div>
+            </div>
+            @*<ul class="list-inline my-3 ">
+                <li class="list-inline-item"><i class="bi bi-calendar"></i> @Model.PublishedOn.ToString("d")</li>
+                <li class="list-inline-item"><i class="bi bi-person-circle"></i> <a href="/profile/@Model.User.UserName">@Model.User.Name</a> </li>
+            </ul>*@
             <div class="tags">
                 @foreach(var tag in Model.Tags)
                 {
                     <a href="/posts/tag/@tag.Url" class="badge bg-@tag.Color bg-opacity-10 text-@tag.Color mb-2 fw-bold">@tag.Text</a>
-                } 
+                }
             </div>
-            <img src="~/uploads/@Model.Image" class="img-fluid rounded" alt="">
-            <ul class="list-inline my-3 ">
-                <li class="list-inline-item"><i class="bi bi-calendar"></i> @Model.PublishedOn.ToString("d")</li>
-                <li class="list-inline-item"><i class="bi bi-person-circle"></i> <a href="/profile/@Model.User.UserName">@Model.User.Name</a> </li>
-            </ul>
+            <h1 class="h4 mb-4">@Model.Title</h1>
+
             <hr class="py-3">
             <div>@Html.Raw(@Model.Description)</div>            
         </div>
         <div class="bg-white mt-3">
-            <div class="card border-0">
-                <div class="card-header pb-0">
-                    <h4><span id="commentCount">@Model.Comments.Count()</span> adet yorum</h4>
-                </div>
+            <div style="">
+                <div class="card-header p-4" style=" margin-bottom: 1rem;border:1px solid;">
+                    <h4>Yorum(lar), <span id="commentCount">@Model.Comments.Count()</span> adet</h4>
+                    <hr>
                 <div class="card-body">
                     <div id="comments">
                         @foreach(var comment in Model.Comments)
                         {
                             <div class="my-4 d-flex">
-                                <img src="/img/@comment.User.Image" alt="" class="float-start me-3" style="width: 60px; height:50px;border-radius: 50%;">
+                                <img src="/img/@comment.User.Image" alt="" class="float-start me-3" style="width: 60px; height:50px; border-radius: 50%;">
                                 <div>
                                     <div class="mb-2 d-flex">
                                         <h6 class="me-2">
-                                            <a href="/profile/@comment.User.UserName">@comment.User.Name</a>
+                                            <a style="color:black" href="/profile/@comment.User.UserName">@comment.User.Name</a>
                                         </h6>
-                                        <small>@comment.PublishedOn.ToString("G")</small>
+                                        <small>@comment.PublishedOn.ToString("dd MMMM yyyy")</small>
                                     </div>
                                     <p>@comment.Text</p>
                                 </div>
                             </div>
                         }
+                </div>
                     </div>
-
+                </div>
                     @if(User.Identity!.IsAuthenticated)
                     {
-                        <hr class="my-4">
-                        <div>
+                        <div class="p-4" style="border: 1px solid;">
                             <h4 class="mb-3">Yorum Ekle</h4>
                             <form action="/posts/AddComment" method="post">
                                 <input type="hidden" id="PostId" name="PostId" value="@Model.PostId">
                                 <div class="mb-3">
-                                    <label for="Text" class="form-label">Yorum</label>
                                     <textarea type="text" name="Text" id="Text" rows="3" class="form-control"></textarea>
                                 </div>
                                 <div class="mb-3">
-                                    <button id="btnYorumKayit" type="submit" class="btn btn-primary">Kaydet</button>
+                                    <button id="btnYorumKayit" type="submit" class="btn btn-outline-dark">Kaydet</button>
                                 </div>
                             </form>
                         </div>
@@ -63,16 +77,13 @@
                     {
                         <p>Yorum için uygulamaya giriş yapmalısınız. <a href="/users/login">Login</a></p>
                     }
-                   
-                </div>
             </div>
         </div>
     </div>
-    <div class="col-lg-4">
+    @*<div class="col-lg-4">
         <vc:tags-menu></vc:tags-menu>
         <vc:new-posts></vc:new-posts>
-    </div>
-       
+    </div>*@
 </div>
 
 @section Scripts {
@@ -121,5 +132,3 @@
         });
     </script>
 }
-
-
