@@ -1,9 +1,15 @@
 @model RegisterViewModel
+<style>
+    body{font-family: "Poppins", sans-serif;}
+</style>
 <div class="row">
-    <div class="col-12">
+    <div class="col-6" style="height: 42vw;overflow:hidden;">
+        <img  src="~/img/Designer.jpeg" alt="" style="overflow:hidden;object-position: bottom:40rem;width:100%;height:auto;mix-blend-mode:luminosity;">
+    </div>
+    <div class="col-6 border">
         <div class="bg-white p-4">
-
-            <h1>Kayıt Ol</h1>
+            <h1 style="font-size: 4rem;padding-bottom:1rem">Kayıt Ol</h1>
+            <p class="pb-1">Bu bloğa katılın ve düşüncelerinizi paylaşın ve sosyalleşin.</p>
             <form action="Register" method="post">
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 <div class="mb-3">
@@ -31,8 +37,9 @@
                     <input asp-for="ConfirmPassword" class="form-control">
                     <span class="text-danger" asp-validation-for="ConfirmPassword"></span>
                 </div>
-                <button type="submit" class="btn btn-primary">Kayıt Ol</button>
+                <button type="submit" class="btn btn-outline-dark">Kayıt Ol</button>
             </form>
         </div>
     </div>
+    
 </div>

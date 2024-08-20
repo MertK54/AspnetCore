@@ -2,7 +2,7 @@
 <div class="row">
     <div class="col-12">
         <h2>Post Listesi</h2>
-        <a href="/posts/create" class="btn btn-primary my-2">Yeni Post</a>
+        <a href="/posts/create" class="btn btn-outline-dark my-2">Yeni Post</a>
         <table class="table table-bordered">
             <thead >
                 <tr>
@@ -22,8 +22,8 @@
                         <td>@i.Title</td>
                         <td>@i.IsActive</td>
                         <td>
-                            <a href="@Url.Action("Edit", new { id = i.PostId })" class="btn btn-sm btn-primary">Düzenle</a>
-                            <a href="@Url.Action("Delete", new { id = i.PostId })" class="btn btn-sm btn-danger">Sil</a>
+                            <a href="@Url.Action("Edit", new { id = i.PostId })" class="btn btn-sm btn-outline-dark">Düzenle</a>
+                            <a href="@Url.Action("Delete", new { id = i.PostId })" class="btn btn-sm btn-dark">Sil</a>
                         </td>
                     </tr>
                 }

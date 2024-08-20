@@ -29,6 +29,10 @@
       "PackagePath": "staticwebassets/img/3.jpeg"
     },
     {
+      "Id": "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/wwwroot/img/Designer.jpeg",
+      "PackagePath": "staticwebassets/img/Designer.jpeg"
+    },
+    {
       "Id": "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/wwwroot/img/avatar.jpg",
       "PackagePath": "staticwebassets/img/avatar.jpg"
     },
@@ -51,6 +55,10 @@
     {
       "Id": "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/wwwroot/img/banner5.png",
       "PackagePath": "staticwebassets/img/banner5.png"
+    },
+    {
+      "Id": "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/wwwroot/img/bg.png",
+      "PackagePath": "staticwebassets/img/bg.png"
     },
     {
       "Id": "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/wwwroot/img/default.png",
@@ -8467,6 +8475,18 @@
     {
       "Id": "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/wwwroot/lib/bootstrap/scss/vendor/_rfs.scss",
       "PackagePath": "staticwebassets/lib/bootstrap/scss/vendor/_rfs.scss"
+    },
+    {
+      "Id": "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/wwwroot/uploads/89f2cf21-6f9b-4b64-8040-3ce64bfec568_savasbaris.jpg",
+      "PackagePath": "staticwebassets/uploads/89f2cf21-6f9b-4b64-8040-3ce64bfec568_savasbaris.jpg"
+    },
+    {
+      "Id": "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/wwwroot/uploads/a7abca76-3003-411e-ba5f-2ce45114779d_IMG_1949.jpeg",
+      "PackagePath": "staticwebassets/uploads/a7abca76-3003-411e-ba5f-2ce45114779d_IMG_1949.jpeg"
+    },
+    {
+      "Id": "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/wwwroot/uploads/f468b853-5a57-4e2b-a68a-98ed331aac05_prideprejudice.jpg",
+      "PackagePath": "staticwebassets/uploads/f468b853-5a57-4e2b-a68a-98ed331aac05_prideprejudice.jpg"
     },
     {
       "Id": "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/wwwroot/uploads/f55322d9-57cc-48ff-a851-18c3347d96e8_blog-homepage.jpeg",

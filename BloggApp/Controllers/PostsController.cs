@@ -162,7 +162,21 @@ namespace BlogApp.Controllers
                 Tags = post.Tags
             });
         }
-
+        [Authorize]
+        public IActionResult Delete(int? id)
+        {
+            if(id == null)
+            {
+                return NotFound();
+            }
+            var post = _postRepository.Posts.FirstOrDefault(i=> i.PostId == id);
+            if(post != null!)
+            {
+                _postRepository.DeletePost(post);
+                return RedirectToAction("List");
+            }
+            return NotFound();
+        }
         [Authorize]
         [HttpPost]
         public async Task<IActionResult> Edit(PostCreateViewModel model, int[] tagIds)

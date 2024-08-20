@@ -145,7 +145,11 @@
     z-index: -1;
 
   }
-
+.kayıt{
+  color: black!important;
+  text-decoration: underline;
+  
+}
 @keyframes animate {
     0% {
         opacity: 0;
