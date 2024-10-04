@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "KJV0ljuNxaontQZLH5ayARkg4HfOTXmHh5vsF2J5v9A=",
+  "Hash": "lgHqSBocO72vlt8IDieAHdTsOsTGki4RSZlYfSxdIQk=",
   "Source": "BloggApp",
   "BasePath": "_content/BloggApp",
   "Mode": "Default",
@@ -40276,6 +40276,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/lib/bootstrap/scss/vendor/_rfs.scss"
+    },
+    {
+      "Identity": "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/wwwroot/uploads/19a614ee-e1c4-4eac-b90a-91122e786988_BJK.png",
+      "SourceId": "BloggApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/wwwroot/",
+      "BasePath": "_content/BloggApp",
+      "RelativePath": "uploads/19a614ee-e1c4-4eac-b90a-91122e786988_BJK.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/19a614ee-e1c4-4eac-b90a-91122e786988_BJK.png"
     },
     {
       "Identity": "/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/wwwroot/uploads/89f2cf21-6f9b-4b64-8040-3ce64bfec568_savasbaris.jpg",

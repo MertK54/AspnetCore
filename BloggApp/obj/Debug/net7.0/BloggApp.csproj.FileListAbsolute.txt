@@ -134,3 +134,5 @@
 /Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/obj/Debug/net7.0/BloggApp.pdb
 /Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/obj/Debug/net7.0/BloggApp.genruntimeconfig.cache
 /Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/obj/Debug/net7.0/ref/BloggApp.dll
+/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/bin/Debug/net7.0/MySqlConnector.dll
+/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/bin/Debug/net7.0/Pomelo.EntityFrameworkCore.MySql.dll

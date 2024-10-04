@@ -1,0 +1,83 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = BloggApp
+build_property.RootNamespace = BloggApp
+build_property.ProjectDir = /Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/Views/Posts/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUG9zdHMvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/Views/Posts/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUG9zdHMvRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/Views/Posts/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUG9zdHMvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/Views/Posts/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUG9zdHMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/Views/Posts/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUG9zdHMvTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/Views/Shared/Components/Header/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvSGVhZGVyL0RlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/Views/Shared/Components/NewPosts/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvTmV3UG9zdHMvRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/Views/Shared/Components/TagsMenu/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvVGFnc01lbnUvRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/Views/Users/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlcnMvTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/Views/Users/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlcnMvUHJvZmlsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/Views/Users/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlcnMvUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/Views/Users/VerifyCode.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlcnMvVmVyaWZ5Q29kZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mertkezer/Library/Mobile Documents/com~apple~CloudDocs/AspnetcoreDers/BloggApp/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

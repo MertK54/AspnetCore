@@ -10,7 +10,10 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<BlogContext>(options =>
 {
-    options.UseSqlite(builder.Configuration["ConnectionStrings:sql_connection"]);
+    var config = builder.Configuration;
+    var connectionStrings = config.GetConnectionString("mysql_connection");
+    var version = new MySqlServerVersion(new Version(8,0,39));
+    options.UseMySql(connectionStrings, ServerVersion.AutoDetect(connectionStrings)); 
 });
 
 builder.Services.AddScoped<IPostRepository, EfPostRepository>();

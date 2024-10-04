@@ -1,0 +1,42 @@
+body { margin: 0; }
+
+.ticker-wrap {
+  padding-left: 2rem;
+  width: auto; /* Sadece içeriği kadar genişlik alır */
+  margin-left: 1rem; /* Başlıkla arasında boşluk bırakır */
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block; /* Başlıkla aynı hizada olacak şekilde ayarlar */
+}
+
+.ticker {
+  display: inline-block;
+  animation: marquee 40s linear infinite;
+}
+
+.item-collection-1,
+.item-collection-2 {
+  display: inline-block;
+  position: relative;
+  animation: swap 40s linear infinite;
+}
+
+.item {
+  display: inline-block;
+  padding: 0 1rem;
+  color: #212529;
+}
+.item a{
+    text-decoration: none;
+    color: black;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+@keyframes swap {
+  0%, 50% { left: 0%; }
+  50.01%, 100% { left: 100%; }
+}

@@ -1,0 +1,165 @@
+/* Base styles *
+/* Banner styles */
+.banner {
+    mix-blend-mode: luminosity;
+    position: relative;
+    width: 15rem;
+    height: 30rem;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: mix-blend-mode 100s ease;
+}
+.lexend{
+  color:rgb(0, 0, 0);
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  letter-spacing: .35rem;
+  font-style: normal;
+}
+.banner:hover {
+    cursor: pointer;
+    mix-blend-mode: normal;
+}
+.effect{
+    mix-blend-mode: luminosity;
+    transition: mix-blend-mode 0.1s ease;
+}
+.effect:hover {
+    cursor: pointer;
+    mix-blend-mode: normal;
+}
+.banner-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.banner a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Banner image wrapper */
+.banner-wrapper {
+    position: relative;
+    width: 100%; /* Kapsayıcının genişliği */
+    height: 20rem; /* Kapsayıcının yüksekliği */
+    overflow: hidden; /* Fazla taşan kısmı gizler */
+}
+
+.banner-wrapper img {
+    position: absolute; /* Resmi konumlandırmak için */
+    top: 50%; /* Dikey ortalamak için */
+    left: 50%; /* Yatay ortalamak için */
+    transform: translate(-50%, -50%); /* Resmi merkezde konumlandırmak için */
+    width: 125%; /* Genişliği orantılı olarak ayarlar */
+    height: 100%; /* Yüksekliği kapsayıcının yüksekliğine göre ayarlar */
+    object-fit: cover; /* Görselin kapsayıcıyı doldurmasını sağlar */
+}
+
+/* Vertical line styles */
+.vertical-line {
+    border-left: 2px solid #ccc; /* Çizginin rengi ve kalınlığı */
+    height: 20rem; /* Çizginin yüksekliği */
+    width: 2px; /* Çizginin kalınlığı */
+    margin-left: 1rem; /* Çizginin etrafında boşluk bırakır */
+}
+
+.highlighted {
+    display: inline-block; /* İçeriği satır içi bloğa dönüştürür */
+    position: relative; /* Diğer elementlere göre konumlandırma için */
+    padding: 0 1rem; /* İç ve dış boşluk ekler */
+    margin-left: 2rem;
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: black;
+    z-index: 1;
+  }
+  
+  .boyama{
+    position: relative;
+  }
+  .boyama::before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: -2rem; /* Başlığın solundan 2rem uzaklıkta başlar */
+    height: 100%;
+    width: 3rem; /* Başlangıçta 2rem genişliğinde */
+    background-color: #51815386; /* Yeşil bir renk (değiştirebilirsiniz) */
+    transition: width 0.3s ease-in-out; /* Geçiş efekti */
+    z-index: -1;
+  }
+  
+  .boyama:hover::before {
+    width: 20rem; /* Hover durumunda 4rem genişliğine genişler */
+  }
+
+  .boyama2{
+    position: relative;
+  }
+  .boyama2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -2rem; /* Başlığın solundan 2rem uzaklıkta başlar */
+    height: 100%;
+    width: 2rem; /* Başlangıçta 2rem genişliğinde */
+    background-color: #51815386; /* Yeşil bir renk (değiştirebilirsiniz) */
+    transition: width 0.3s ease-in-out; /* Geçiş efekti */
+    z-index: -1;
+  }
+  
+  .boyama2:hover::before {
+    width: 10rem; /* Hover durumunda 4rem genişliğine genişler */
+  }
+
+  .highlighted::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 25%; /* Başlangıçta genişliğin %25'i kadar */
+    background-color: #51815386; /* Yeşil bir renk (değiştirebilirsiniz) */
+    transition: width 0.3s ease-in-out; /* Geçiş efekti */
+    z-index: -1;
+  }
+  
+  .highlighted:hover::before {
+    width: 100%; /* Hover durumunda tüm genişliği kaplar */
+    z-index: -1;
+
+  }
+.kayıt{
+  color: black!important;
+  text-decoration: underline;
+  
+}
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(225deg) translate(-20px, -20px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(225deg) translate(20px, 20px);
+    }
+}
